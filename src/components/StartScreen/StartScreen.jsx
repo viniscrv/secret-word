@@ -1,12 +1,12 @@
 import React from 'react'
 import { Container } from './style'
 
-const StartScreen = () => {
+const StartScreen = ({startGame}) => {
   return (
     <Container>
         <h1>Secret Word</h1>
         <p>Clique no botaõ abaixo para iniciar o jogo</p>
-        <button>Começar o jogo</button>
+        <button onClick={startGame}>Começar o jogo</button>
     </Container>
   )
 }
