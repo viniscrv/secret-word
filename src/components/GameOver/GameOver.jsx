@@ -1,11 +1,13 @@
 import React from "react";
+import { Container } from "./style";
 
-const GameOver = ({ retry }) => {
+const GameOver = ({ retry, score }) => {
   return (
-    <div>
-      <h1>Game</h1>
+    <Container>
+      <h1>Fim de jogo</h1>
+      <h2>A sua pontuação foi <span>{score}</span></h2>
       <button onClick={retry}>Reiniciar jogo</button>
-    </div>
+    </Container>
   );
 };
 
